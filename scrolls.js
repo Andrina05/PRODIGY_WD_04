@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             scrollProgress = Math.min(Math.max(scrollProgress, 0), 1);
 
             // opacity varies between 0.3 and 1
-            let opacity = 0.3 + scrollProgress;
+            let opacity = 0.7 + scrollProgress;
 
             section.style.transition = 'opacity 0.1s ease-out';
             section.style.opacity = opacity;
@@ -27,4 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("scroll", makeBGImageOpaque);
     makeBGImageOpaque();
-});
+})

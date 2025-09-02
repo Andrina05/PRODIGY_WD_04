@@ -32,7 +32,10 @@ h4 {
 .card {
     background-color: midnightblue;
     margin-bottom: 20px;
-    min-height: 450px;
+    height: 500px;
+    max-height: 600px;
+    overflow-y: auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 nav a {
@@ -67,19 +70,19 @@ nav ul li {
 }
 
 #home {
-    background-image: url('bgimg1.png');
+    background-image: url('images/bgimg1.png');
 }
 
 #about {
-    background-image: url('profileimg2.jpg');
+    background-image: url('images/profileimg2.jpg');
 }
 
 #skills {
-    background-image: url('bgimg2.png');
+    background-image: url('images/bgimg2.png');
 }
 
 #projects {
-    background-image: url('bgimg3.png');
+    background-image: url('images/bgimg3.png');
 }
 
 @media (max-width: 769px) {
@@ -87,5 +90,11 @@ nav ul li {
         width: 40%;
         max-width: 50%;
         height: auto;
+    }
+}
+
+@media (max-width: 989px) {
+    body {
+        font-size: 16px;
     }
 }
